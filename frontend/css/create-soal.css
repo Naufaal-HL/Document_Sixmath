@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;;
+}
+
+.content {
+    position: relative;
+    left: 150px;
+    height: 100%;
+    background: #E5E5E5;
+    transition: all .4s ease;
+}
+
+.sidebar.act~.content {
+    left: 357px;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -630px;
+    width: 90px;
+    height: 54px;
+    border-radius: 40px;
+    background-color: #fff;
+}
+
+.sidebar.act~.content .profile {
+    left: 410px;
+}
+
+.kaca {
+    padding: 0 5px;
+}
+
+.lonceng {
+    padding: 0 5px;
+
+}
+
+.foto {
+    position: absolute;
+    right: 185px;
+    top: 17px;
+    border-radius: 50%;
+    height: 54px;
+    width: 54px;
+    transition: all .4s ease;
+}
+
+.sidebar.act~.content .foto {
+    right: 410px;
+}
+
+.main-content {
+    position: relative;
+    height: max-content;
+    width: 85%;
+    background-color: #FFF;
+    border-radius: 8px;
+    padding-bottom: 20px;
+    transition: all .4s ease;
+}
+
+.sidebar.act~.content .main-content {
+    transition: all .4s ease;
+    width: 1083px;
+}
+
+.img-math {
+    position: absolute;
+    margin: 5px;
+    width: 20%;
+    opacity: .2;
+}
+
+.judul {
+    font-size: 32px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.sub {
+    font-size: 24px;
+}
+
+.desc {
+    color: #D7D7D7;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.kiri {
+    position: relative;
+    width: 554px;
+    height: 290px;
+    background-color: #6A35FF;
+    background-image: url(/frontend/assets/variasi7.png);
+    border-radius: 10px 8px;
+}
+
+.btn-buat {
+    position: absolute;
+    bottom: 20px;
+    height: 62px;
+    width: 161px;
+    border-radius: 14px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6A35FF;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.btn-unggah {
+    position: absolute;
+    bottom: 20px;
+    height: 62px;
+    width: 209px;
+    border-radius: 14px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FBAF00;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.kanan {
+    position: relative;
+    width: 610px;
+    height: 289px;
+    background-color: #FBAF00;
+    border-radius: 10px 8px;
+    transition: all .4s ease;
+}
+
+.sidebar.act ~ .content .kanan {
+    transition: all .4s ease;
+    width: 455px;
+}
+
+.variasi {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.second-content {
+    height: max-content;
+    width: 85%;
+    padding-bottom: 40px;
+    background-color: #FFF;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    transition: all .4s ease;
+}
+.sidebar.act ~ .content .second-content {
+    width: 1083px;
+    transition: all .4s ease;
+}
+.banner-soal {
+    position: relative;
+    width: 1250px;
+    height: 136px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all .4s ease;
+}
+.sidebar.act ~ .content .banner-soal {
+    width: 1030px;
+    transition: all .4s ease;
+}
+.topik{
+    margin-top: 33px;
+    margin-left: 24px;
+    margin-bottom: 4px;
+    font-size: 32px;
+}
+.count{
+    font-size: 16px;
+    margin-left: 24px;
+}
+.btn-edit{
+    position: absolute;
+    width: 192px;
+    height: 62px;
+    top: 33px;
+    right: 20px;
+    color: #6A35FF;
+    font-size: 20px;
+    border-radius: 14px;
+    border: none;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+}

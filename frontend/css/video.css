@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background: #E5E5E5;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/* sidebar */
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 150px;
+    background: #6A35FF;
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+}
+.sidebar.act .akt{
+    background-color: #EBC314;
+    border-radius: 10px;
+}
+.sidebar .akt{
+    background-color: #EBC314;
+    border-radius: 10px;
+}
+.sidebar.act{
+    width: 357px;
+}
+.sidebar .logo_content .logo{
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 0;
+    pointer-events: auto;
+}
+.sidebar.act .logo_content .logo{
+    opacity: 1;
+    position: relative;
+    left: 40px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.logo_content .logo i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+.sidebar #btn{
+    position: absolute;
+    color: #fff;
+    top: 6px;
+    left: 50%;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+.sidebar.act #btn{
+    left: 90%;
+    cursor: pointer;
+}
+.sidebar ul{
+    margin-top: 20px;   
+}
+.sidebar ul li{
+    position: relative;
+    height: 50px;
+    width: 50%;
+    left: 30px;
+    margin: 0 5px;
+    list-style: none;
+    line-height: 50px;
+}
+.sidebar.act ul li{
+    width: 80%;
+    left: 20px;
+}
+.sidebar ul li a{
+    color: #fff;
+    display: flex;
+    border-radius: 12px;
+    white-space: nowrap;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all .4s ease;
+}
+.sidebar ul li i{
+    height: 50px;
+    min-width: 55px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+.sidebar ul li a:hover{
+    background: #EBC314;
+    color: #6A35FF;
+}
+.sidebar .logout_content{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.sidebar .logout_content .logout{
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+    background: none;
+    transition: all .5 ease;
+}
+.sidebar.act .logout_content .logout{
+    background: #6A35FF;
+}
+.logout_content .logout .log_details{
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.sidebar.act .logout .log_details{
+    opacity: 1;
+    pointer-events: auto;
+}
+.logout .log_details img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.logout .log_details .string{
+    font-size: 20px;
+    position: absolute;
+    left: 90px;
+    cursor: pointer;
+}
+.sidebar.act .logout .log_details .string{
+    transition: all .4s ease;
+}
+.logout #log_out:hover{
+    background-color: #EBC314;
+}
+
+.logout #log_out{
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translate(-50%);
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all .5 ease;
+    background: #6A35FF;
+    cursor: pointer;
+}
+.sidebar.act .logout #log_out{
+    left: 20%;
+    top: 1px;
+}
+.sidebar.act .logout #log_out{
+    background: none;
+}
+.sidebar ul li .tultip{
+    position: absolute;
+    height: 35px;
+    left: 162px;
+    top: 0;
+    transform: translate(-50% , -50%);
+    border-radius: 6px;
+    width: 122px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar.act ul li .tultip{
+    left: 380px;
+    display: block;
+}
+.sidebar .links_name{
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s ease;
+}
+.sidebar.act .links_name{
+    opacity: 1;
+    pointer-events: auto;
+}
+.sidebar ul li:hover .tultip{
+    transition: all .5s ease;
+    opacity: 1;
+    top: 50%;
+    z-index: 11111;
+}
+.sidebar.act ul li:hover .tultip
+{
+    opacity: 0;
+}
+.nav-list{
+    padding-left: 0 !important;
+}
+.atas{
+    position: relative;
+    left: 180px;
+}
+.sidebar.act ~ .atas{
+    left: 380px;
+}
+.sidebar.act ~ .container-fluid .heading{
+    transition: all .4s ease;
+}
+.heading{
+    transition: all .4s ease;
+}
+.sidebar.act ~ .container-fluid .property{
+    transition: all .4s ease;
+    margin-left: 225px;
+}
+.property{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 110px;
+    padding: 0 10px;
+    background-color: #fff;
+    border-radius: 60px;
+    margin-left: 425px;
+    transition: all .4s ease;
+}
+.bx-search{
+    position: absolute;
+}
+.bxs-bell{
+    padding: 0 30px;
+    position: absolute;
+}
+.property img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    right: 10px;
+}
+.content-left
+{
+    height: 820px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all .4s ease;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    transition: all .4s ease;
+}
+.content-right
+{
+    height: max-content;
+    width: 535px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all .4s ease;
+}
+
+.sidebar.act ~.container-fluid .content-right{
+    width: 335px;
+    transition: all .4s ease;
+}
+#main-video iframe{
+    margin-top: 30px;
+    border-radius: 10px;
+}
+#main-video{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    border-radius: 10px;
+}
+
+.rekomendasi{
+    margin-left: 30px;
+    font-size: 24px;
+}
+.judul-main{
+    font-size: 40px;
+}.desc{
+    margin-left: 70px;
+}
+.card{
+    margin-left: 20px;
+    width: 29rem; 
+    height: 14rem;
+    transition: all .4s ease;
+}
+.sidebar.act ~.container-fluid .card{
+    transition: all .4s ease;
+    width: 265px;
+}
+.iframe-rek{
+    transition: all .4s ease;
+    border-radius: 4px;
+    width: 463px;
+}
+.sidebar.act ~.container-fluid .iframe-rek{
+    width: 265px;
+    transition: all .4s ease;
+}
